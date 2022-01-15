@@ -23,6 +23,10 @@ a {
 li {
   list-style: none;
 }
+
+.for-mobile {
+  display: none;
+}
 /*======================================
 Common Styles or Utilities Style Ended
 ======================================*/
@@ -102,7 +106,7 @@ i.for-mobile {
 }
 
 .header-bottom .button {
-  background-color: #e02c6d;
+  background-image: linear-gradient(#e02c6d, tomato);
   color: #ffffff;
   padding: 10px 24px;
   border-radius: 41px;
