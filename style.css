@@ -180,6 +180,8 @@ Main Section Style Started
 /* Popular Section Style Started */
 .popular-collection {
   margin-top: 100px;
+  margin-right: 120px;
+  margin-left: 120px;
 }
 
 .popular-collection h2 {
@@ -191,12 +193,12 @@ Main Section Style Started
 }
 
 .collections {
-  margin: 0px 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   align-items: stretch;
   justify-items: center;
+  justify-content: center;
 }
 
 .collection {
@@ -249,7 +251,6 @@ Main Section Style Started
 .see-more-btn {
   text-align: right;
   margin-top: 50px;
-  margin-right: 120px;
 }
 
 .see-more-btn a {
@@ -420,19 +421,17 @@ Responsive Design Started
     display: none;
   }
 
+  .popular-collection {
+    margin: 100px 16px;
+  }
+
   .popular-collection h2 {
     font-size: 24px;
   }
 
   .collections {
-    margin: 0px 16px;
+    justify-content: center;
     grid-template-columns: 1fr;
-  }
-
-  .see-more-btn {
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 32px;
   }
 
   .newsletter form input[type="text"] {
@@ -539,7 +538,6 @@ Responsive Design Started
   }
 
   .see-more-btn {
-    text-align: center;
     margin-right: 0px;
     margin-top: 32px;
   }
