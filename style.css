@@ -456,3 +456,112 @@ Responsive Design Started
     margin-left: 10px;
   }
 }
+/* Mobile Responsive Desing End */
+
+/* Responsive Design for Tablet Devices(Medium) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  i.for-mobile {
+    display: block;
+    color: #1b1b1b;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  header {
+    margin: 40px 30px;
+  }
+  .header-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-text {
+    order: 2;
+    margin-top: 16px;
+  }
+
+  .header-text h2 {
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .header-text p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .link-container {
+    margin: 0px auto;
+  }
+
+  a.button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header-banner {
+    margin-top: 30px;
+    order: 1;
+    text-align: center;
+  }
+
+  .camera-centered-bg {
+    height: 0px;
+    width: 0px;
+  }
+
+  .header-banner img {
+    height: 257px;
+    width: 257px;
+  }
+
+  .popular-collection h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .collections {
+    margin: 0px 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .collection img {
+    height: 220px;
+    width: 250px;
+  }
+
+  .see-more-btn {
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 32px;
+  }
+
+  .newsletter form input[type="text"] {
+    width: 200px;
+  }
+
+  .newsletter form input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer .footer-icons i {
+    font-size: 14px;
+  }
+
+  footer .footer-icons a {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+}
