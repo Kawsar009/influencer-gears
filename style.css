@@ -96,13 +96,13 @@ i.for-mobile {
 }
 
 .link-container:hover {
-  transform: rotate(10deg);
-  transition: transform 0.3s ease;
+  transform: translateX(10px);
+  transition: transform 0.5s ease;
 }
 
 .link-container:hover i {
   transform: translateX(10px);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .header-bottom .button {
@@ -292,7 +292,7 @@ section.newsletter {
 
 .newsletter form input[type="submit"] {
   height: 40px;
-  background-color: #e02c6d;
+  background-image: linear-gradient(#e02c6d, tomato);
   color: white;
   padding: 0px 20px;
   border: 1px solid #e02c6d;
@@ -337,6 +337,10 @@ footer .footer-icons a {
   background-color: #22213c;
   padding: 12px 15px;
   border-radius: 50%;
+}
+
+.footer-icons a:hover {
+  background-image: linear-gradient(#e02c6d, tomato);
 }
 
 footer .footer-icons a:first-of-type {
