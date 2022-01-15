@@ -30,9 +30,14 @@ Common Styles or Utilities Style Ended
 /*=====================================
 Header Section Style Started
 =====================================*/
+header {
+  margin: 60px 110px;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-top h1 {
@@ -49,6 +54,7 @@ Header Section Style Started
 .navigation-menu li a {
   color: var(--header-color);
   padding: 0px 10px;
+  font-weight: 600;
 }
 
 .navigation-menu li:last-of-type a {
@@ -59,23 +65,120 @@ Header Section Style Started
   display: flex;
 }
 
+.header-text {
+  margin-top: 115px;
+}
+
 .header-bottom h2 {
   color: var(--header-color);
   font-size: 52px;
+  margin-bottom: 16px;
 }
 
 .header-text p {
   color: var(--header-color);
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .header-bottom .button {
   background-color: #e02c6d;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border-radius: 41px;
   font-weight: 700;
+}
+
+.header-bottom .button i {
+  margin-left: 10px;
+}
+
+.header-banner {
+  margin-top: 50px;
+  position: relative;
+}
+
+.camera-centered-bg {
+  background-color: #f1e4ff;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 58px;
+  left: 69px;
+}
+
+.header-banner img {
+  height: 350px;
+  width: 376px;
+  padding: 16px;
+  border: 1px solid #f1e4ff;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.header-logos {
+  margin-top: 60px;
+}
+
+.image-custom-hr {
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1),
+    rgba(192, 204, 218, 0.6),
+    rgba(192, 204, 218, 0.1)
+  );
+}
+
+.header-logo-images {
+  margin: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-images img {
+  height: 50px;
+  width: 60px;
 }
 /*====================================
 Header Section Style Ended
 ====================================*/
+
+/*====================================
+Main Section Style Started
+====================================*/
+
+/* Popular Section Style Started */
+.popular-collection {
+  margin-top: 100px;
+}
+
+.popular-collection h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--header-color);
+  text-align: center;
+}
+
+.collections {
+  margin: 0px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.collection {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.collection img {
+  height: 256px;
+  width: 300px;
+}
