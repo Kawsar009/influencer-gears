@@ -40,6 +40,10 @@ header {
   align-items: center;
 }
 
+i.for-mobile {
+  display: none;
+}
+
 .header-top h1 {
   color: var(--header-color);
   font-weight: 700;
@@ -271,7 +275,7 @@ section.newsletter {
   height: 40px;
   padding-left: 20px;
   margin-right: 8px;
-  width: 300px;
+  width: 270px;
   border: 1px solid #e02c6d;
   border-radius: 20px;
 }
@@ -326,7 +330,7 @@ footer .footer-icons a {
   margin-left: 20px;
   color: white;
   background-color: #22213c;
-  padding: 12px;
+  padding: 12px 15px;
   border-radius: 50%;
 }
 
@@ -336,4 +340,119 @@ footer .footer-icons a:first-of-type {
 
 footer .footer-icons i {
   font-size: 24px;
+}
+/*===============================
+Footer Section Style Ended
+===============================*/
+/*===============================
+Responsive Design Started
+===============================*/
+
+/* For small mobile device */
+@media only screen and (max-width: 600px) {
+  i.for-mobile {
+    display: block;
+    color: #1b1b1b;
+  }
+
+  ul.navigation-menu {
+    display: none;
+  }
+
+  header {
+    margin: 35px 20px;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-text {
+    order: 2;
+    margin-top: 16px;
+  }
+
+  .header-text h2 {
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .header-text p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .link-container {
+    margin: 0px auto;
+  }
+
+  a.button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header-banner {
+    margin-top: 30px;
+    order: 1;
+    text-align: center;
+  }
+
+  .camera-centered-bg {
+    height: 0px;
+    width: 0px;
+  }
+
+  .header-banner img {
+    height: 257px;
+    width: 257px;
+  }
+
+  .header-logos {
+    margin-top: 50px;
+    overflow-x: hidden;
+    display: none;
+  }
+
+  .popular-collection h2 {
+    font-size: 24px;
+  }
+
+  .collections {
+    margin: 0px 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .see-more-btn {
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 32px;
+  }
+
+  .newsletter form input[type="text"] {
+    width: 200px;
+  }
+
+  .newsletter form input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  footer h3 {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer .footer-icons i {
+    font-size: 12px;
+  }
+
+  footer .footer-icons a {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
 }
