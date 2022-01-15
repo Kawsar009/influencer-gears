@@ -78,7 +78,8 @@ header {
 .header-text p {
   color: var(--header-color);
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .header-bottom .button {
@@ -236,4 +237,51 @@ Main Section Style Started
 
 .see-more a i {
   margin-left: 5px;
+}
+
+/*============================
+Main Section Style Ended
+============================*/
+
+/*============================
+Footer Section Style Started
+============================*/
+footer {
+  padding: 50px 0px;
+  background-color: #0a0826;
+  color: white;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-icons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-icons a {
+  margin-left: 20px;
+  color: white;
+  background-color: #22213c;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+footer .footer-icons a:first-of-type {
+  margin-left: 0px;
+}
+
+footer .footer-icons i {
+  font-size: 24px;
 }
