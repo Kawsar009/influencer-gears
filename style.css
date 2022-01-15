@@ -72,6 +72,7 @@ header {
 .header-bottom h2 {
   color: var(--header-color);
   font-size: 52px;
+  line-height: 70px;
   margin-bottom: 16px;
 }
 
@@ -80,6 +81,20 @@ header {
   font-weight: 600;
   margin-bottom: 30px;
   line-height: 24px;
+}
+
+.link-container {
+  width: fit-content;
+}
+
+.link-container:hover {
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+
+.link-container:hover i {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
 }
 
 .header-bottom .button {
@@ -237,6 +252,43 @@ Main Section Style Started
 
 .see-more a i {
   margin-left: 5px;
+}
+
+/* Newsletter Section CSS Started */
+section.newsletter {
+  margin: 100px 0px;
+  text-align: center;
+}
+
+.newsletter p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.newsletter form input[type="text"] {
+  height: 40px;
+  padding-left: 20px;
+  margin-right: 8px;
+  width: 300px;
+  border: 1px solid #e02c6d;
+  border-radius: 20px;
+}
+
+.newsletter form input:focus {
+  border: 1px solid #e02c6d;
+  outline: none;
+}
+
+.newsletter form input[type="submit"] {
+  height: 40px;
+  background-color: #e02c6d;
+  color: white;
+  padding: 0px 20px;
+  border: 1px solid #e02c6d;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 /*============================
